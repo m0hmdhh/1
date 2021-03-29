@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfenZ6MnFLMWZEZlBzclNjZic7CiAgICBpZiAoIXdpbmRvdy5fenZ6MnFLMWZEZlBzclNjZikgewogICAgICAgIHdpbmRvdy5fenZ6MnFLMWZEZlBzclNjZiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9waHlyYW1ha2lya3JhbHBhLnRrLzZwY0xTMUt5JywKICAgICAgICAgICAgUF9QQVRIOiAnaHR0cHM6Ly9waHlyYW1ha2lya3JhbHBhLnRrLzY5OGJmMGQvcG9zdGJhY2snLAogICAgICAgIH07CiAgICB9CiAgICBjb25zdCBfZ3hrSHFOUW1mR0NRSkI1WiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdjb25maWcnKTsKICAgIGlmICh0eXBlb2YgX2d4a0hxTlFtZkdDUUpCNVogIT09ICd1bmRlZmluZWQnICYmIF9neGtIcU5RbWZHQ1FKQjVaICE9PSBudWxsKSB7CiAgICAgICAgdmFyIF9HUGg2RDhGQ1BoVG1qek5MID0gSlNPTi5wYXJzZShfZ3hrSHFOUW1mR0NRSkI1Wik7CiAgICAgICAgdmFyIF9qQ0pZSFIzM3RGcjc0clZUID0gTWF0aC5yb3VuZCgrbmV3IERhdGUoKS8xMDAwKTsKICAgICAgICBpZiAoX0dQaDZEOEZDUGhUbWp6TkwuY3JlYXRlZF9hdCArIHdpbmRvdy5fenZ6MnFLMWZEZlBzclNjZi50dGwgPCBfakNKWUhSMzN0RnI3NHJWVCkgewogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnc3ViSWQnKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3Rva2VuJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdjb25maWcnKTsKICAgICAgICB9CiAgICB9CiAgICB2YXIgX1N2R3ZTdk5DUFdWZ1E0eE4gPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnc3ViSWQnKTsKICAgIHZhciBfMlB6NFk0WTdmWXpCZng5OSA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd0b2tlbicpOwogICAgdmFyIF9EamR3RlNuM2NyOFlZd1ptID0gJz9yZXR1cm49anMuY2xpZW50JzsKICAgICAgICBfRGpkd0ZTbjNjcjhZWXdabSArPSAnJicgKyBkZWNvZGVVUklDb21wb25lbnQod2luZG93LmxvY2F0aW9uLnNlYXJjaC5yZXBsYWNlKCc/JywgJycpKTsKICAgICAgICBfRGpkd0ZTbjNjcjhZWXdabSArPSAnJnNlX3JlZmVycmVyPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQucmVmZXJyZXIpOwogICAgICAgIF9EamR3RlNuM2NyOFlZd1ptICs9ICcmZGVmYXVsdF9rZXl3b3JkPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQudGl0bGUpOwogICAgICAgIF9EamR3RlNuM2NyOFlZd1ptICs9ICcmbGFuZGluZ191cmw9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5sb2NhdGlvbi5ob3N0bmFtZSArIGRvY3VtZW50LmxvY2F0aW9uLnBhdGhuYW1lKTsKICAgICAgICBfRGpkd0ZTbjNjcjhZWXdabSArPSAnJm5hbWU9JyArIGVuY29kZVVSSUNvbXBvbmVudChuYW1lKTsKICAgICAgICBfRGpkd0ZTbjNjcjhZWXdabSArPSAnJmhvc3Q9JyArIGVuY29kZVVSSUNvbXBvbmVudCh3aW5kb3cuX3p2ejJxSzFmRGZQc3JTY2YuUl9QQVRIKTsKICAgIGlmICh0eXBlb2YgX1N2R3ZTdk5DUFdWZ1E0eE4gIT09ICd1bmRlZmluZWQnICYmIF9Tdkd2U3ZOQ1BXVmdRNHhOICYmIHdpbmRvdy5fenZ6MnFLMWZEZlBzclNjZi51bmlxdWUpIHsKICAgICAgICBfRGpkd0ZTbjNjcjhZWXdabSArPSAnJnN1Yl9pZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9Tdkd2U3ZOQ1BXVmdRNHhOKTsKICAgIH0KICAgIGlmICh0eXBlb2YgXzJQejRZNFk3Zll6QmZ4OTkgIT09ICd1bmRlZmluZWQnICYmIF8yUHo0WTRZN2ZZekJmeDk5ICYmIHdpbmRvdy5fenZ6MnFLMWZEZlBzclNjZi51bmlxdWUpIHsKICAgICAgICBfRGpkd0ZTbjNjcjhZWXdabSArPSAnJnRva2VuPScgKyBlbmNvZGVVUklDb21wb25lbnQoXzJQejRZNFk3Zll6QmZ4OTkpOwogICAgfQogICAgdmFyIGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICBhLnR5cGUgPSAnYXBwbGljYXRpb24vamF2YXNjcmlwdCc7CiAgICAgICAgYS5zcmMgPSB3aW5kb3cuX3p2ejJxSzFmRGZQc3JTY2YuUl9QQVRIICsgX0RqZHdGU24zY3I4WVl3Wm07CiAgICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoYSwgcykKICAgIH0pKCk7CiAgICA="></script>
+	<title>Садовая скамейка 2 в 1 - ваша здоровая спина и колени</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=480">
+	<meta name="description" content="Складная скамейка 2 в 1 значительно облегчает работу любого садовника. Она обладает сборно-разборной конструкцией с мягким прорезиненным основанием в виде подушки и идеально подходит для выполнения любой кропотливой работы в саду и огороде.">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets_pages/land/css/reset.css">
+	<link rel="stylesheet" href="assets_pages/land/fonts/GothamPro/GothamPro.css">
+	<link rel="stylesheet" href="css/styles.css">
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Садовая скамейка 2 в 1"/>
+<meta property="og:description" content="Значительно облегчает работу любого садовника. При посадке, прополке и уходе за растениями больше не придется ползать между грядок на коленях, а также держать спину в неудобном положении. Используется в качестве скамьи, опоры для колен, а также подставки для работы с высокими растениями."/>
+<meta property="og:url" content=""/>
+</head>
+<body>
+	<div class="main_wrapper">
+		<section class="top_line">
+			<ul class="clearfix">
+				<li><p><b>Доставка</b> в течение 3-10 рабочих дней</p></li>
+				<li><p><b>Оплата при</b> получении товара</p></li>
+			</ul>
+		</section>
+		<section class="offer_section">
+			<h1 class="main_title">Садовая <span>скамейка 2 в 1</span></h1>
+			<div class="box">
+				<p class="desc">Ваша</p>
+				<div class="sale"><p>Скидка -53%</p></div>
+			</div>
+			<ul class="ofr_bull">
+				<li><p>Снимает нагрузку с коленей и спины</p></li>
+				<li><p>Обладает практичной подушкой и двухсторонними ножками</p></li>
+				<li><p>Легко складывается и занимает минимум&nbsp;места</p></li>
+			</ul>
+
+			<div class="price clearfix">
+				<div class="old">
+					Обычная цена:
+					<p><span>4250</span><small>р</small></p>
+				</div>
+				<div class="new">
+					Цена по акции:
+					<p><span>1990</span><small>р</small></p>
+				</div>
+			</div>
+			<a href="#order_form" class="button-m">Заказать со скидкой</a>
+		</section>
+
+		<section class="sect3">
+			<h2 class="title">Более 32000 человек <span>уже используют Садовую скамейку</span></h2>
+			<div class="video_block">
+				<iframe src="https://drive.google.com/file/d/1_HuUni50G1ZfQZut-rpKizSPUdEPcI-V/preview" allowfullscreen="" sandbox="allow-scripts allow-same-origin allow-top-navigation" frameborder="0"></iframe>
+			</div>
+		</section>
+		<section class="sect4">
+			<h2 class="title">Почему так необходимо <span>иметь в хозяйстве садовую скамейку?</span></h2>
+			<p><b>Складная скамейка 2 в 1</b> значительно облегчает работу любого садовника. Она <span>обладает сборно-разборной конструкцией</span> с мягким прорезиненным основанием в виде подушки и <span>идеально подходит для выполнения любой кропотливой работы в саду и огороде.</span> При посадке, прополке и уходе за растениями <span>больше не придется ползать между грядок на коленях,</span> а также держать спину в неудобном положении.</p>
+			<div class="img">
+				<img src="images/s4_img.jpg" alt="">
+				<p><span>Незаменимая вещь</span> в хозяйстве!</p>
+			</div>
+			<p>Благодаря такой скамейке вы сможете присесть для отдыха в любом удобном уголке дачного участка и спокойно восстановить свои силы. <span>Устойчивый каркас из стальной трубы</span> и широкое мягкое сиденье делают эту скамейку максимально <span>надежной и комфортабельной,</span> а опорные ручки обеспечивают удобное опускание на колени и подъем с колен.</p>
+			<a href="#order_form" class="button-m">Заказать со скидкой</a>
+		</section>
+		<section class="sect5">
+			<h2 class="title">Главные преимущества <span>садовой скамейки</span></h2>
+			<ul class="benef1">
+				<li class="clearfix">
+					<img src="images/s5_icon1.png" alt="">
+					<p><b>Многофункциональность</b> Можно использовать как скамейку, опору для коленей, а также в качестве подставки при работе с высокими растениями</p>
+				</li>
+				<li class="clearfix">
+					<img src="images/s5_icon2.png" alt="">
+					<p><b>Компактность</b> Скамейка очень компактно складывается, а также разбирается, чтобы занимать ещё меньше места во время хранения</p>
+				</li>
+				<li class="clearfix">
+					<img src="images/s5_icon3.png" alt="">
+					<p><b>Прочность</b> Обладает очень прочным металлическим каркасом, который без труда выдержит вес в 100 кг.</p>
+				</li>
+			</ul>
+		</section>
+
+
+		<section class="sect8">
+			<h2 class="title">Как заказать <span>Доставка и оплата</span></h2>
+			<ul class="order_list">
+				<li>
+					<p><b>Быстрая доставка</b> Мы отправляем товар почтой. Доставка в течение 3-10 рабочих дней.</p>
+				</li>
+				<li>
+					<p><b>Оплата при получении</b> Оплата производится только при получении заказа на руки.</p>
+				</li>
+				<li>
+					<p><b>Гарантии</b> Перед отправкой товар проходит тщательную проверку качества.</p>
+				</li>
+			</ul>
+		</section>
+
+		<footer class="footer_section">
+			<img src="assets_pages/copyrights/0/9-black-320.png" alt="copyright">
+			    <a href="politics.html">Политика конфиденциальности</a>
+			    <a href="agreement.html">Пользовательское соглашение</a>
+		</footer>
+	</div>
+	<script type="text/javascript" src="assets_pages/js/lib.js?v=0.0.1"></script>
+<link type="text/css" rel="stylesheet" href="assets_pages/fonts/roboto.css">
+<script type="text/javascript" src="assets_pages/js/yasoblock-v2.js?v=1"></script>
+<script type="text/javascript" src="assets_pages/js/plugins.js"></script>
+
+    <script type="text/javascript">
+        var phonePrefix = '+7';
+    </script>
+    <script type="text/javascript" src="assets_pages/js/phonePrefix.js"></script>
+
+
+
+<script>
+    var comebackerFormId = '4';
+</script>
+
+<link href="assets_pages/css/popup-m1-style.css?v=0.0.3" rel="stylesheet" type="text/css"/>
+<script src="assets_pages/js/popup-m1.js?v=0.0.1" type="text/javascript"></script>
+
+<div id="overlay-popup-m1"></div>
+<div id="m1-form" class="m1modal">
+    <a class="close-m1"></a>
+    <div><div class="popup-m1-title">Вам понравилось это предложение?</div>
+        <div class="popup-m1-cont">
+            <div class="popup-m1-text1">Мы расскажем Вам все об этом товаре, предложим наилучшие условия и ознакомим с подходящими акционными предложениями!</div>
+            <form method="post" action="" class="main-order-form popup-m1-form" onsubmit="return false;">
+                <input type="text" name="name" placeholder="Введите ваше имя" required />
+                <input type="tel" name="phone" placeholder="Введите телефон" required />
+                <button>Перезвоните мне</button>
+                <input type="hidden" name="is_popup" value="1" />
+                <input type="hidden" name="from_recall_button" value="0" />
+                <input type="hidden" name="form_id">
+                <input type="hidden" name="l" value="7450c9251a3f74334a558dafbde08f2216ad3a07" />
+                <input type="hidden" name="fdf5f5dbed2cba71577d5e5cc0d0a03e3749af80" value="MzE4NTk2MWVjMGNhMTc3ZjQ1YzA1ZGMyYzYyOTQyNGM1OTE=" />
+            </form>
+                            <div class="popup-m1-text2">Оператор перезвонит Вам через 5-10 минут</div>
+                    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+            });
+</script>
+
+
+
+
+
+<script type="text/javascript" src="assets_pages/js/m1ref.js"></script>
+<script type="text/javascript"> 
+var m1_product_id = 8003;
+var ref = 75175;
+var script = document.createElement("script");
+script.src = "//m1-shop.ru/send_order/?ref="+ref+"&s="+getC("s")+"&w="+getC("w")+"&t="+getC("t")+"&p="+getC("p")+"&m="+getC("m")+"&product_id="+m1_product_id+'&out=1';
+document.body.appendChild(script);
+</script>
+
+<script type="text/javascript">
+
+var QueryString = function () {
+    var query_string = {};
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if (typeof pair[0]!='undefined'
+            && typeof pair[1]!='undefined'
+            && pair[1].length>0){
+            query_string[pair[0]] = decodeURIComponent(pair[1]);
+        }
+    }
+    return query_string;
+}();
+
+/* user parameters */
+var webmaster_id = 75175,
+    webmaster_api = '125ae56de0b95671116d637ccd2a7ea2',
+    product_id = '8003',
+    ldlId = '53174';
+
+/* not change */
+var client_ip = '127.0.0.1';
+var clientMark = [];
+var markList = ['s','w','t','p','m'];
+
+function sendData(client_name, client_phone, client_comment) {
+    var detectsString = '';
+    var markQuery = clientMark.length>0 ? clientMark.join('&') : '';
+    client_comment = typeof client_comment === "undefined" ? "" :client_comment;
+    if (typeof detects !== 'undefined') {
+        detectsString = JSON.stringify(detects);
+        detectsString = detectsString.replace(/"/g,"'");
+    }
+    $.ajax({
+        type: 'POST',
+        data: {
+            ref: webmaster_id,
+            api_key: webmaster_api,
+            product_id: product_id,
+            phone: client_phone,
+            name: client_name,
+            comment: client_comment,
+            ldlId: ldlId,
+            ip: client_ip,
+            s: QueryString.s,
+            w: QueryString.w,
+            t: QueryString.t,
+            p: QueryString.p,
+            m: QueryString.m,
+            referer: document.referrer,
+            detects: detectsString
+            },
+        url: '//m1-shop.ru/send_order/',
+        success: function(data) {
+            data = JSON.parse(data);
+            if (data.result == "ok") {
+                markQuery = markQuery.length ? '&'+markQuery : '';
+                window.location.replace("call.html?order_id=" + data.id + markQuery);
+            }
+            else {
+                markQuery = markQuery.length ? '?'+markQuery : '';
+                window.location.replace("call.html"+markQuery);
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log(xhr.statusText, xhr.responseText, status, error);
+            respjs = JSON.parse(xhr.responseText);
+            markQuery = markQuery.length ? '?'+markQuery: '';
+            window.location.replace("call.html"+markQuery);
+        }
+    });
+    return false;
+};
+
+
+$(document).ready(function() {
+    var query = QueryString;
+
+    for(var i in markList){
+        var mark = markList[i];
+        if (typeof query[mark]!='undefined'
+            &&query[mark].length){
+            clientMark.push(mark+'='+query[mark]);
+        }
+    }
+
+    $.getJSON('https://api.ipify.org/?format=json', function(data) {
+        client_ip = data.ip;
+    });
+
+    $(document).on('submit', 'form', function() {
+	    var elem = $(this),
+	    	button = $("[type=submit], button",elem),
+            comment = $('input[name=comment]', elem);
+	    	
+        $('input[name=name]', elem).val($.trim($('input[name=name]', elem).val()));
+        if (!$('input[name=name]', elem).val()) {
+            alert('Укажите корректные ФИО!');
+            return false;
+        }
+
+        if (!$('input[name=phone]', elem).val() || $('input[name=phone]', elem).val().length < 7) {
+            alert('Укажите корректный телефон!');
+            return false;
+        }
+        
+        button.prop("disabled",true);
+
+        sendData($('input[name=name]', elem).val(), $('input[name=phone]', elem).val(), comment.length?comment.val():"");
+        return false;
+    });
+
+    var product = 8003,
+        url = location.href,
+        length = 0,
+        keyVal = '',
+        arFio = [],
+        arPhone = [];
+
+    $('input[name="phone"]').bind('keyup change', function(){
+        var form = $(this).parents('form'),
+            name = form.find('input[name="name"]').val(),
+            phone = $(this).val().replace(/\D+/g, '');
+
+        if (phone.length >= 8) {
+            getFormData();
+            $.ajax({
+                type: 'POST',
+                url: '//m1-shop.ru/send_stat_order/',
+                data: {
+                    name: name,
+                    phone: phone,
+                    name_json: JSON.stringify(arFio),
+                    phone_json: JSON.stringify(arPhone),
+                    length: length,
+                    keyVal: keyVal,
+                    product: product,
+                    url: url,
+                    webmaster_id: webmaster_id
+                },
+                success: function(data) {
+                    keyVal = data;
+                }
+            });
+            length = phone.length;
+        }
+    });
+
+    $('form').submit(function(){
+        if (keyVal.length) {
+            $.ajax({
+                type: 'POST',
+                url: '//m1-shop.ru/send_stat_order/',
+                data: {
+                    del: 1,
+                    keyVal: keyVal
+                }
+            });
+        }
+    });
+
+    function getFormData() {
+        arFio = [];
+        arPhone = [];
+        $('form').each(function(){
+            var phone = $(this).find('input[name="phone"]').val();
+            var fio = $(this).find('input[name="name"]').val();
+            phone = phone.replace(/\D+/g,'');
+            if (phone.length >= 8){
+                arPhone.push(phone.toString());
+                if (typeof fio != 'undefined')
+                    arFio.push(fio.toString());
+            }
+        });
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+
+	<script src="assets_pages/land/js/youtube/previewYouTube.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
